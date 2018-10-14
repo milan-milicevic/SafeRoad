@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/backgorund"
+        android:contentDescription="@string/background_desc"/>
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/safe_road"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="55dp"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        tools:text="@tools:sample/date/ddmmyy"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="-34dp"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        tools:text="@tools:sample/date/hhmmss"/>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textView1"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/nearest_crossroad"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/address"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/city"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/safe_to_cross"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:text="TextView"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="TextView"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/textView6"
+        android:text="TextView"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="136dp"
+        android:text="@string/last_activity"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        android:text="@string/departure_time"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="55dp"
+        android:text="@string/train_speed"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:text="@string/crossing_time"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/textView14"
+        android:text="TextView"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@id/textView15"
+        android:text="TextView"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/textView16"
+        android:text="TextView"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
