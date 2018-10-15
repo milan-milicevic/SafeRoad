@@ -12,11 +12,10 @@ import com.google.gson.JsonObject;
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Random;
 
 import WebAPI.DataProvider;
 import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,23 +24,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.safe_road_activity);
+        setContentView(R.layout.main_activity);
 
-        TextView date = (TextView) findViewById(R.id.textView2);
-        TextView time = (TextView) findViewById(R.id.textView3);
-
-        TextView crossroad = (TextView) findViewById(R.id.textView9);
-        TextView address = (TextView) findViewById(R.id.textView10);
-        TextView city = (TextView) findViewById(R.id.textView11);
-
-        TextView departure = (TextView) findViewById(R.id.textView17);
-        TextView speed = (TextView) findViewById(R.id.textView18);
-        TextView crossTime = (TextView) findViewById(R.id.textView19);
-
-        Date currentTime = Calendar.getInstance().getTime();
-
-       /* date.setText(currentTime.toString());
-        time.setText(currentTime.toString());*/
 
         timer = new CountDownTimer(3000, 20) {
 
@@ -53,8 +38,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 try {
-                    getData();
+                    //getData();
+                    boolean chk = false; //if server returns data
 
+                    switchLayout(chk);
+                    Log.d("Message", "Logging in 5 sec...");
                     timer.start();
                 } catch (Exception e) {
                     Log.e("Error", "Error: " + e.toString());
@@ -90,5 +78,34 @@ public class MainActivity extends AppCompatActivity {
                 call.cancel();
             }
         });*/
+    }
+
+    private void switchLayout(boolean check)
+    {
+        if(check)
+            setContentView(R.layout.safe_road_activity);
+        else
+            setContentView(R.layout.main_activity);
+
+        /*TextView date = (TextView) findViewById(R.id.textView2);
+        TextView time = (TextView) findViewById(R.id.textView3);
+
+        TextView crossroad = (TextView) findViewById(R.id.textView9);
+        TextView address = (TextView) findViewById(R.id.textView10);
+        TextView city = (TextView) findViewById(R.id.textView11);
+
+        TextView departure = (TextView) findViewById(R.id.textView17);
+        TextView speed = (TextView) findViewById(R.id.textView18);
+        TextView crossTime = (TextView) findViewById(R.id.textView19);
+
+        Date currentTime = Calendar.getInstance().getTime();
+
+        date.setText(currentTime.toString());
+        time.setText(currentTime.toString());*/
+    }
+
+    private void vibrate()
+    {
+        //TODO : Bluetooth communication
     }
 }

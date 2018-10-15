@@ -6,7 +6,8 @@
     <!-- Labels -->
     <string name="safe_road">SafeRoad</string>
     <string name="last_activity">Poslednja aktivnost</string>
-    <string name="safe_to_cross">BEZBEDAN\n PRELAZ</string>
+    <string name="safe_to_cross">BEZBEDAN\nPRELAZ</string>
+    <string name="warning">PAZNJA!\nVOZ JE U BLIZINI!</string>
 
     <!-- upper information -->
     <string name="address">Adresa:</string>
